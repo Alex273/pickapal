@@ -1,0 +1,219 @@
+// Variables
+$red-color: #e82f3a;
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;  
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 550px;
+    min-height: 650px;    
+}
+
+.modal-main {
+ width:80%;
+ display: block;
+ margin: 0 auto;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0.8;
+    right: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sign-in-popup {
+color: black;
+  font-family: HelveticaNeueCyr-Medium;
+  margin-top:70px;
+  margin-bottom:50px;
+}
+
+.login-or-email-text{
+     font-family: HelveticaNeueCyr-Medium;
+    color: #bebebe;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.sign-in-input-login-popup, .sign-in-input-password-popup {  
+    height: 50px;
+    width: 100%;
+    font-size: 2.2rem;    
+    padding-right: 40px;   
+    margin-bottom: 50px;
+    border-bottom: 2px solid #d1dbe1;
+    border-left: 2px solid transparent;
+    border-right:  2px solid transparent;
+    border-top:  2px solid transparent;
+    outline: none;
+}
+
+.sign-in-input-login-popup {
+    color:  $red-color;  
+}
+
+.sign-in-input-password-popup {
+  color: $red-color;
+}
+
+.sign-in-input-login-popup:focus {    
+    border-bottom:2px solid $red-color;  
+}
+.sign-in-input-password-popup:focus {    
+    border-bottom:2px solid $red-color; 
+}
+
+.sign-in-form {
+    position: relative;
+}
+
+.green-smile-icon1-popup, .green-smile-icon2-popup, .red-smile-icon1-popup, .red-smile-icon2-popup {      
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    right: 5px;    
+}
+
+.green-smile-icon1-popup, .red-smile-icon1-popup {
+  top: 40px; 
+}
+
+.green-smile-icon2-popup, .red-smile-icon2-popup {
+  top: 165px;
+}
+
+.green-smile-icon1-popup, .green-smile-icon2-popup {
+  background-image: url("../images/green-smile.png"); 
+}
+
+.red-smile-icon1-popup, .red-smile-icon2-popup {
+ background-image: url("../images/red-smile.png"); 
+}
+
+.sign-in-submit-button-popup {
+    width: 100%;
+    height:55px;
+    margin-top:20px;
+    margin-bottom:40px;
+    background: $red-color; 
+    color: #fff;
+    font-family: HelveticaNeueCyr-Medium;
+    font-size: 2.5rem;
+    text-align: center;
+    border:1px solid transparent;
+    outline: none;
+    border-radius: 5px;   
+}
+.sign-in-submit-button-popup:hover {   
+     -webkit-box-shadow: 0px 7px 12px -6px rgba(92,92,92,1);
+    -moz-box-shadow: 0px 7px 12px -6px rgba(92,92,92,1);
+    box-shadow: 0px 7px 12px -6px rgba(92,92,92,1);
+    -webkit-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+}
+
+.forgot-line {
+    display: block;
+    margin-bottom:15px;
+}
+.forgot-password-sign-in-popup, .reset-password-sign-in-popup {
+    color: #e17867; 
+     font-size: 1.6rem;
+     font-family: HelveticaNeueCyr-Medium;
+     cursor: pointer;
+     margin-right: 15px;
+     margin-bottom: 15px;
+}
+.reset-password-sign-in-popup {
+    font-weight: 600;    
+}
+
+.forgot-password-sign-in-popup:hover, .reset-password-sign-in-popup:hover {
+     color: #ffbdb2;
+     text-decoration: none;
+}
+
+
+
+@media (max-width:768px) {
+
+    .modal {   
+    padding-top: 40px;  
+}
+.modal-content {    
+    width: 90%;
+    max-width: 550px;
+    min-height: 500px;
+}
+
+.sign-in-popup {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.close {   
+    font-size: 30px;   
+}
+
+.sign-in-input-login-popup, .sign-in-input-password-popup {
+    height: 40px;
+    width: 100%;
+    font-size: 1.8rem;
+    padding-right: 40px;
+    margin-bottom: 20px;   
+}
+
+.sign-in-submit-button-popup {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 22px;  
+    font-size: 2.2rem;    
+}
+
+.green-smile-icon1-popup, .red-smile-icon1-popup {
+    top: 30px;
+}
+
+.green-smile-icon2-popup, .red-smile-icon2-popup {
+    top: 115px;
+}
+
+.forgot-password-sign-in-popup, .reset-password-sign-in-popup {
+     font-size: 1.2rem;   
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+}

@@ -1,0 +1,21 @@
+@font-face {
+font-family: 'HelveticaNeueCyr-Medium';
+src: url('fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.eot');
+src: url('fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
+url('fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.woff') format('woff'),
+url('fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf') format('truetype'),
+url('HelveticaNeue-Medium/HelveticaNeue-Medium.svg#HeydingsCommonIconsRegular') format('svg');
+font-weight:normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'HelveticaNeueCyr-Bold';
+src: url('fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot');
+src: url('fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+url('fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.woff') format('woff'),
+url('fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf') format('truetype'),
+url('HelveticaNeue-Bold/HelveticaNeue-Bold.svg#HeydingsCommonIconsRegular') format('svg');
+font-weight:normal;
+font-style: normal;
+}

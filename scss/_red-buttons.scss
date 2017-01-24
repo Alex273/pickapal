@@ -1,0 +1,114 @@
+// Variables
+$red-color: #e82f3a;
+
+.make-referrals, .sign-up-free, .post-job-dashboard {
+    padding: 0px; 
+    height: 40px;
+    border: 3px solid $red-color;
+    border-radius:4px;
+    background: $red-color;
+    font-size:1.6rem;
+    color:#fff;
+    font-family: HelveticaNeueCyr-Medium;
+    outline: none;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+.make-referrals {
+border: 1px solid $red-color;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+}
+
+.make-referrals:hover, .post-job-dashboard:hover  {
+-webkit-box-shadow: 0px 7px 12px -6px rgba(92,92,92,1);
+-moz-box-shadow: 0px 7px 12px -6px rgba(92,92,92,1);
+box-shadow: 0px 7px 12px -6px rgba(92,92,92,1);
+-webkit-transition: box-shadow 0.3s;
+transition: box-shadow 0.3s;
+}
+
+.sign-up-free {
+height: 40px;
+padding-left: 2.5rem;
+padding-right: 2.5rem;
+}
+
+.sign-up-free:hover {
+border: 3px solid $red-color;   
+background: #fff;
+color:#686877;
+transition: background 0.6s;
+}
+
+.pj {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+
+.post-job-dashboard {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    height: 60px;
+}
+
+.pay-reward-button {
+   padding-left: 0px;
+    padding-right: 0px;
+    height: 35px;
+    width: 85%;
+    border: 1px solid $red-color;   
+    background: $red-color;
+    font-size:1.4rem;
+    color:#fff;
+    outline: none;
+    cursor: pointer;   
+}
+.pay-reward-button:hover {
+ -webkit-box-shadow: 0px 7px 12px -6px rgba(92,92,92,1);
+-moz-box-shadow: 0px 7px 12px -6px rgba(92,92,92,1);
+box-shadow: 0px 7px 12px -6px rgba(92,92,92,1);
+-webkit-transition: box-shadow 0.3s;
+transition: box-shadow 0.3s;
+}
+
+@media (max-width:768px) {
+    .pj {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+    .post-job-dashboard {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 40px;
+}
+
+    .pay-reward-button {
+width: 98%;
+}
+}
+
+@media (min-width:768px) and (max-width:992px) {
+.sign-up-free {   
+    width: 100%;
+    text-align: center;
+}
+
+.pay-reward-button {
+   padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+    height: 45px;
+  
+}
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+.pay-reward-button {
+   
+}
+}

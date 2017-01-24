@@ -1,0 +1,249 @@
+// Variables
+$red-color: #e82f3a;
+
+.content {
+margin: 0 auto;
+width: 100%;
+}
+
+.main-content {  
+width: 100%;
+background: #edf1f5;
+display: inline-block;
+margin-top: 90px;
+}
+
+.logo {
+display: inline-block;
+float: left;
+padding-left: 55px !important;
+}
+
+.profile-photo {
+width: 70px;
+border: 3px solid #d7d3d1;
+border-radius: 35px;
+overflow: hidden;
+float: left;
+margin-right: 30px;
+margin-top: -3px;
+position: relative;
+display: inline-block;
+}
+
+.profile-image {
+ width: 100%;
+}
+
+.section-left {
+    max-width: 250px;
+    background: #4d5565;
+    height: 850px;
+    display: inline-block;
+    float: left;   
+    position: fixed !important;
+}
+
+.section-main {   
+    background: #edf1f5;
+    position: relative;  
+    display: inline-block;
+    margin-right: 0px;
+    padding-right: 30px !important;
+    padding-left: 30px !important;   
+    padding-bottom: 50px;
+}
+
+.job-line {
+    background: #fff;
+    width: 100%;    
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 15px;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
+
+.job-title {
+font-size: 1.4rem;
+font-family: HelveticaNeueCyr-Medium;
+padding-left: 15px;
+margin-top: 5px;
+padding-right: 10px;
+cursor: pointer;
+}
+.data-posted {
+font-size: 1.4rem;
+font-family: HelveticaNeueCyr-Medium;
+}
+
+.data-expires {
+font-size: 1.4rem;
+font-family: HelveticaNeueCyr-Medium;
+margin-top: 5px;
+}
+
+.referrals{
+font-size: 1.4rem;
+font-family: HelveticaNeueCyr-Medium;
+margin-top: 5px;
+cursor: pointer;
+}
+
+.referrals-new {
+font-size: 1.4rem;
+font-family: HelveticaNeueCyr-Medium;
+color: $red-color;
+font-weight: 700;
+margin-top: 5px;
+cursor: pointer;
+}
+
+.job-title, .data-posted, .data-expires, .referrals, .referrals-new  {   
+   word-wrap: break-word;
+   padding-right: 15px;
+}
+
+.job-line-names {
+ width: 100%;    
+margin-right: 0px;
+margin-left: 0px;
+padding-top: 10px;
+padding-right: 15px;
+padding-bottom: 15px;
+}
+
+.job-line-text, .job-line-text-title {
+text-align: left;
+font-size: 1.4rem;
+font-family: HelveticaNeueCyr-Medium;
+ word-wrap: break-word;
+ padding-right: 15px !important;
+}
+
+.job-line-names .job-line-text-title {
+padding-left: 15px;
+}
+
+.one-job-mobile {
+display: none;
+}
+.job-line-mobile {
+    display:none;    
+}
+
+#main {
+    transition: margin-left .5s;   
+     background: #edf1f5;
+     height: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav  {padding-top: 15px;}
+  .sidenav  a {font-size: 18px;}
+}
+
+@media (max-width: 768px) {
+    .logo {
+    text-align: left; 
+    padding-left: 15px !important;   
+}
+  .dashboard-sign-buttons {  
+    text-align: center;
+    background: #fff;
+    padding-bottom: 15px;
+}
+.profile-photo {   
+    float: none;  
+    margin-top: 0; 
+}
+
+.dashboard-sign-up {
+    vertical-align: inherit;
+    margin-bottom: 13px;
+}
+
+.section-main {    
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+   height: auto;
+    padding-bottom: 10px;
+}
+
+.job-line-names, .job-line {
+display: none;
+}
+
+.one-job-mobile {
+display: block;
+margin-top:15px;
+margin-bottom: 20px;
+}
+.job-line-mobile {
+    display:block;
+    background: #fff;
+    width: 100%;    
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 15px;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.job-title, .data-posted, .data-expires, .referrals, .referrals-new  {   
+    padding-left: 20px;   
+    margin-top: 0px; 
+}
+
+}  
+
+@media (min-width:769px) and (max-width:992px) {
+ .header {   
+    min-height: 130px;    
+}
+
+.profile-photo {
+width: 60px;
+    border: 3px solid #d7d3d1;
+    border-radius: 35px;
+    overflow: hidden;
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.dashboard-sign-buttons {
+    text-align: left;
+}
+
+.dashboard-sign-buttons.sign-up {   
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid $red-color;
+    border-radius: 6px;
+    background: $red-color;
+    font-size: 1.6rem;
+    font-family: HelveticaNeueCyr-Bold;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+    .section-left {
+    max-width: 250px;
+    background: #4d5565;
+    height: 850px;
+    display: inline-block;
+    float: left;
+    position: fixed !important;
+    margin-top: 40px;
+} 
+
+
+}

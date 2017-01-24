@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PickaPal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" /> 
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/fonts.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Poppins:400,600,700,500,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,400italic,500,500italic,300,100italic,100,300italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body> 
+
+<header class="header">
+	<div class="container">
+	<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">	
+
+	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+		<a href="#underverse"><img class="logo-image" src="images/logo.jpg"/></a>		
+	</div>
+
+	<button type="button" class="navbar-toggle menu-button collapsed" data-toggle="collapse" data-target="#myNavbar">
+		 <span class="icon-bar"></span>
+		 <span class="icon-bar"></span>
+         <span class="icon-bar"></span>           
+	</button>					
+	 
+	<div class="col-lg-7 col-md-7 col-sm-8 col-xs-12 header-nav">
+	<nav class="collapse navbar-collapse main-nav" id="myNavbar" role="navigation">
+		<ul class="nav navbar-nav right">
+				<li><a href="index.html" class="page-scroll active">Jobs</a></li>
+				<li><a href="#underverse" class="page-scroll">How it Works</a></li>
+				<li><a href="news.html" class="page-scroll">Benefits</a></li>
+				<li><a href="#allcontacts" class="page-scroll">Pricing</a></li>				
+				<li><a href="contacts.html" class="page-scroll">Contact</a></li>
+		</ul>
+   </nav>
+   </div>
+
+   <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 sign-buttons">
+	   <button class="sign-in" id="myBtn">
+		   Sign In
+	   </button>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle sign-up" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Sign Up  <span class="caret"></span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#" id="myBtn-create-employer">Switch to Employer Account</a>
+    <a class="dropdown-item" href="#">Switch to Referrer Account</a>
+    <a class="dropdown-item" href="#">Sign Out</a>   
+  </div>
+</div>
+</div>
+
+<!-- The Sign In Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	   <span class="close">&times;</span>
+	  <div class="modal-main">
+	<h1 class="sign-in-popup">
+		Sign In
+	</h1>
+	<form class="sign-in-form">
+	<p class="login-or-email-text">Login or Email</p>	
+	<input type="email" class="sign-in-input-login-popup" id="sign-in-input-login-popup" oninput="changeSmileSignIn1();">	 
+	 <div id="smile-icon1-sign-in-popup" class="red-smile-icon1-popup"></div>
+
+	 <p class="login-or-email-text">Password</p>
+	 <input type="password" class="sign-in-input-password-popup" id="sign-in-input-password-popup" oninput="changeSmileSignIn2();">		
+    <div id="smile-icon2-sign-in-popup" class="red-smile-icon2-popup"></div>
+
+	 	<button type="submit" class="sign-in-submit-button-popup">Sign In</button>
+	</form>
+	<div class="forgot-line">
+      <a href="news.html" class="forgot-password-sign-in-popup">Forgot your password?</a>
+	<a href="news.html" class="reset-password-sign-in-popup">Reset it here!</a>
+	</div>
+	 <div class="forgot-line">
+	<a href="news.html" class="forgot-password-sign-in-popup">Don't have an account? </a>
+	<a href="news.html" class="reset-password-sign-in-popup">Sign Up here!</a>	
+      </div>
+  </div>
+ </div>
+</div>
+<!-- End modal -->
+
+<!-- The Create New Employer Account Modal -->
+<div id="myModal-create-employer" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+	   <span class="close-create-employer">&times;</span>
+	  <div class="modal-main">
+	<h1 class="create-employer-popup">
+		Create New Employer Account
+	</h1>
+	<form class="sign-in-form">
+	<p class="login-or-email-text">Email</p>	
+	<input type="email" class="create-employer-input-login-popup" id="create-employer-input-email-popup" oninput="changeSmileCreateEmp1();">	 
+	 <div id="smile-icon1-create-employer-popup" class="red-smile-icon1-popup"></div>
+
+	 <p class="login-or-email-text">Company</p>
+	 <input type="password" class="create-employer-input-password-popup" id="create-employer-input-company-popup" oninput="changeSmileCreateEmp2();">		
+    <div id="smile-icon2-create-employer-popup" class="red-smile-icon2-popup"></div>
+
+	 <p class="login-or-email-text">Password</p>
+	 <input type="password" class="create-employer-input-password-popup" id="create-employer-input-password-popup" oninput="changeLineIn3();">	    
+
+	 <p class="login-or-email-text">Confirm Password</p>
+	 <input type="password" class="create-employer-input-password-popup" id="create-employer-input-confirm-password-popup" oninput="changeLineIn4();">		
+   
+	 	<button type="submit" class="create-employer-submit-button-popup">Create Account</button>
+	</form>	
+  </div>
+ </div>
+</div>
+<!-- End modal -->
+   
+   </div>
+   </div>
+ </div>
+</header>
+
+<div class="section-one">
+<div class="container">
+	<div class="row">
+		 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 left-column">
+		 <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+			 	<h1 class="section-1-title">The Best Emploee Referral Platform</h1>
+		<button class="make-referrals">
+		 Make Referrals
+	   </button>
+		<button class="post-job">
+			Post a Job
+		</button> 
+		</div>
+		</div>
+
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right-column">
+			<img src="images/dashboard.jpg" alt="" class="dashboard-image">
+		</div>		
+	</div>
+</div>
+</div>
+
+
+<div class="section-two">
+	<div class="container">
+	<div class="row">
+		<h1 class="section-2-title">How It Works</h1>
+		 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 how-it-work">
+			 	 <img src="images/icon.png" alt="" class="main-icon-image">
+			 <h4 class="section-2-column-title">Lorem Ipsum</h4>			 
+			  <p class="how-it-work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+				   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			 </div>
+			 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 how-it-work">
+				 	 <img src="images/icon.png" alt="" class="main-icon-image">
+				  <h4 class="section-2-column-title">Lorem Ipsum</h4>
+				  <p class="how-it-work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+				   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			 </div>
+			 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 how-it-work">
+				 	 <img src="images/icon.png" alt="" class="main-icon-image">
+				  <h4 class="section-2-column-title">Lorem Ipsum</h4>
+				  <p class="how-it-work-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+				   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			 </div>
+			
+	</div>
+</div>
+
+</div>
+<div class="section-three">
+	<div class="container">
+		<div class="row">
+
+	<h1 class="section-3-title">I've Got It</h1>
+ <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
+	 <span><img src="images/name-icon.png" alt="" class="mame-icon"></span>
+	<input type="name" class="sign-up-free-input-name" placeholder="Your Name">
+	 <span><img src="images/email-icon.png" alt="" class="email-icon"></span>
+	<input type="name" class="sign-up-free-input-email" placeholder="Email Address">
+	 <span><img src="images/password-icon.png" alt="" class="password-icon"></span>
+	<input type="password" class="sign-up-free-input-password" placeholder="Create a Password">
+	<button type="submit" class="sign-up-free">Sign up Free</button>
+
+</div>
+</div>
+</div>	
+</div> 
+ 
+<footer class="footer">
+	<div class="container">
+	<div class="row">
+ <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1 footer-logo">
+	<a href="#underverse"><img src="images/logo.jpg" alt="" class="logo-image"></a>
+	 <p class="copyright-text">@2016 PickaPal. All Rights Reserved.</p>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 company-info">
+	  <h4 class="section-2-column-title">Company Info</h4>
+	  
+	  <ul class="footer-menu">
+		  <li class="footer-menu-item"><a href="#underverse" class="footer-page-scroll">Jobs</a></li>
+		   <li class="footer-menu-item"><a href="#underverse" class="footer-page-scroll">How it works</a></li>
+		    <li class="footer-menu-item"><a href="#underverse" class="footer-page-scroll">Benefits</a></li>
+		    <li class="footer-menu-item"><a href="#underverse" class="footer-page-scroll">Pricings</a></li>		   
+	  </ul>
+</div>
+
+<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6 follow-us">
+	 <h4 class="section-2-column-title">Follow Us</h4>
+	 <ul class="footer-follow-us">		 
+			<li class="footer-menu-item"><a href="#underverse" class="footer-page-scroll">Facebook</a></li>
+		   <li class="footer-menu-item"><a href="#underverse" class="footer-page-scroll">Twitter</a></li>
+		    <li class="footer-menu-item"><a href="#underverse" class="footer-page-scroll">Google Plus</a></li>		   			
+	  </ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 newlesster">
+	 <h4 class="section-2-column-title">Newlesster</h4>
+<form class="newlesster-input"action="">
+  <input class="input-newlesster" type="text" placeholder="Email">
+  <button class="submit-arrow">&gt;</button>  
+</form>
+</div>
+</div>
+</div>
+</footer>				
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/sign-in-popup.js"></script>
+ <script type="text/javascript" src="js/create-employer-popup.js"></script> 
+</body>
+</html>

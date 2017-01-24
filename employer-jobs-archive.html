@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>PickaPal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/fonts.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Poppins:400,600,700,500,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,400italic,500,500italic,300,100italic,100,300italic'
+    rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-6 logo">
+          <img class="logo-image" src="images/logo.jpg" />
+        </div>
+
+        <button type="button" class="navbar-toggle menu-button collapsed" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>           
+          </button>
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 header-nav">
+          <nav class="collapse navbar-collapse main-nav" id="myNavbar" role="navigation">
+            <ul class="nav navbar-nav right">
+              <li><a href="index.html" class="page-scroll active">Jobs</a></li>
+              <li><a href="#underverse" class="page-scroll">How it Works</a></li>
+              <li><a href="news.html" class="page-scroll">Benefits</a></li>
+              <li><a href="#allcontacts" class="page-scroll">Pricing</a></li>
+              <li><a href="contacts.html" class="page-scroll">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12 dashboard-sign-buttons">
+          <div class="profile-photo">
+            <img class="profile-image" src="images/men.jpg" />
+          </div>
+
+          <div class="btn-group dashboard-sign-up ">
+            <button type="button" class="btn btn-danger dropdown-toggle sign-up" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Sign Up  <span class="caret"></span>
+  </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Switch to Employer Account</a>
+              <a class="dropdown-item" href="#">Switch to Referrer Account</a>
+              <a class="dropdown-item" href="#">Sign Out</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <div id="mySidenav" class="sidenav">
+    <div class="" id="bs-sidebar-navbar-collapse-1">
+      <div class="left-menu-op-mobile" onclick="openNav()">&times;</div>
+      <ul class="nav navbar-nav left-nav">
+        <li><a href="#"><span class="left-menu-icon"><img class="" src="images/account-icon.png"/></span>Account</a></li>
+        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="left-menu-icon"><img class="" src="images/jobs-icon.png"/></span>Jobs</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#" onclick="openNav()">Live</a></li>
+            <li><a href="#">Draft</a></li>
+            <li class="active"><a href="#">Archived</a></li>
+          </ul>
+        </li>
+        <li><a class="left-item" href="http://sproutlabsweb.com/"><span class="left-menu-icon"><img class="" src="images/referrals-icon.png"/></span>Referrals</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div id="main">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section-main">
+          <div class="left-menu-op" onclick="openNav()">&#9776;</div>
+         <div class="archived-page-title"> 
+          Archived 
+          <span class="archived-counter">
+           (3)
+          </span>
+         </div>
+
+         <!-- Desktop version of one Job string-->
+          <div class="row job-line-names">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 job-line-text-title">
+              Job
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 job-line-text">
+              Job Location
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 job-line-text">
+              Data Posted
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-12 job-line-text">
+              Referrals
+            </div>           
+          </div>
+
+          <div class="row job-line">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+              <div class="job-title">
+                Angular SPA
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+              <div class="data-expires"> Dec 24
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">             
+               <div class="data-expires">
+                <span class="date">Sept 24</span>,
+                <span class="days-ago">2 month ago</span>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-12">
+              <div class="referrals">
+                3
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <button class="pay-reward-button">
+                Repost
+                </button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <button class="pay-reward-button">
+                Delete
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="row job-line">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+              <div class="job-title">
+                Angular SPA
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+              <div class="data-expires"> Dec 24
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">             
+               <div class="data-posted">
+                <span class="date">Sept 24</span>,
+                <span class="days-ago">2 month ago</span>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-12">
+              <div class="referrals">
+                3
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <button class="pay-reward-button">
+                Repost
+                </button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                  <button class="pay-reward-button">
+                Delete
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+          <!-- For mobile version -->
+          <div class="col-xs-12 one-job-mobile">
+            <div class="row job-line-mobile">
+              <div class="col-xs-4 job-line-text">
+                Job
+              </div>
+              <div class="col-xs-8">
+                <div class="job-title">
+                  Angular SPA
+                </div>
+              </div>
+            </div>
+            <div class="row job-line-mobile">
+              <div class="col-xs-4 job-line-text">
+                Data Posted
+              </div>
+              <div class="col-xs-8">
+                <div class="data-posted">
+                  <span class="date">Sept 24</span><br>
+                  <span class="days-ago">2 month ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="row job-line-mobile">
+              <div class="col-xs-4 job-line-text">
+                Data Expires
+              </div>
+              <div class="col-xs-8">
+                <div class="data-expires"> Dec 24
+                </div>
+              </div>
+            </div>
+            <div class="row job-line-mobile">
+              <div class="col-xs-4 job-line-text">
+                Referrals
+              </div>
+              <div class="col-xs-8">
+                <div class="referrals">
+                  3
+                </div>
+              </div>
+            </div>
+            <div class="row job-line-mobile">
+              <div class="col-xs-4 job-line-text">
+                New
+              </div>
+              <div class="col-xs-8">
+                <div class="referrals-new" id="myBtn-new-referrals-mob">
+                  3
+                </div>
+              </div>
+            </div>
+            <div class="row job-line-mobile">
+              <div class="col-xs-6">
+                <button class="pay-reward-button">
+                Pay Reward!
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button class="pay-reward-button">
+                Archive
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 one-job-mobile">
+            <div class="row job-line-mobile">
+              <div class="col-xs-4 job-line-text">
+                Job
+              </div>
+              <div class="col-xs-8">
+                <div class="job-title">
+                  Angular SPA
+                </div>
+              </div>
+            </div>
+            <div class="row job-line-mobile">
+              <div class="col-xs-4 job-line-text">
+                Data Posted
+              </div>
+              <div class="col-xs-8">
+                <div class="data-posted">
+                  <span class="date">Sept 24</span><br>
+                  <span class="days-ago">2 month ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="row job-line-mobile">
+              <div class="col-xs-4 job-line-text">
+                Data Expires
+              </div>
+              <div class="col-xs-8">
+                <div class="data-expires"> Dec 24
+                </div>
+              </div>
+            </div>
+            <div class="row job-line-mobile">
+              <div class="col-xs-4 job-line-text">
+                Referrals
+              </div>
+              <div class="col-xs-8">
+                <div class="referrals">
+                  3
+                </div>
+              </div>
+            </div>
+            <div class="row job-line-mobile">
+              <div class="col-xs-4 job-line-text">
+                New
+              </div>
+              <div class="col-xs-8">
+                <div class="referrals-new" id="myBtn-new-referrals-mob">
+                  3
+                </div>
+              </div>
+            </div>
+            <div class="row job-line-mobile">
+              <div class="col-xs-6">
+                <button class="pay-reward-button">
+                Pay Reward!
+                </button>
+              </div>
+              <div class="col-xs-6">
+                <button class="pay-reward-button">
+                Archive
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/leftnav.js"></script>
+  <script type="text/javascript" src="js/new-referrals-popup.js"></script>
+
+</body>
+
+</html>
